@@ -1,6 +1,6 @@
 <h1> RickMorty APP </h1>
 
-<img src="../rick-morty/src/assets/bgReadme.jpg" alt="Descrição da Imagem" width="700px" />
+<img src="https://images4.alphacoders.com/133/1334909.jpg" alt="Rick, Morty e Summer" width="700px" />
 
 <h2> O objetivo desse app é trazer informações sobre os personagens da animação `Rick and Morty`.</h2>
 <hr>
