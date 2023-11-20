@@ -1,27 +1,45 @@
-# RickMorty
+<h1> RickMorty APP </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+<img src="../rick-morty/src/assets/bgReadme.jpg" alt="Descrição da Imagem" width="700px" />
 
-## Development server
+<h2> O objetivo desse app é trazer informações sobre os personagens da animação `Rick and Morty`.</h2>
+<hr>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Como o app funciona?
 
-## Code scaffolding
+Ele dever apresentar todos os personagens da animação e permitir a filtragem por nome. Além disso, quando o usuário clicar sobre o personagem, deverá ser carregada uma nova tela contendo mais informações sobre o personagem, como: name, location, species e gender. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Tecnologias usadas
 
-## Build
+Foram usadas as seguintes tecnologias:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+- Bootstrap
+- Scss
+- TypeScript
+- Vs Code
+- Html
 
-## Running unit tests
+## Funcionalidades do app
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Tela de login
+- Botão de logout
+- Home carregando automaticamente os dados iniciais da API
+- Botão para atualizar a lista de personagens, recebendo novos dados da API
+- Filtro de personagens
+- Navegação entre telas
+- Trazer as informações sobre os personagens 
 
-## Running end-to-end tests
+## Como testar o app 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash 
 
-## Further help
+# Clone o repositório 
+git clone https://github.com/DeboraCarmonaM/RickMortyApp.git
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Instale as dependências 
+npm i
+
+# Execute o projeto 
+ng s
+

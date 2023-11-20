@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<main>
+    <ng-template [ngIf]="isLoading">
+        <div class="center">
+            <div class="card-details">
+                <section class="character__names">
+                  <h1 class="slideInLeft pt-2">{{ character[0].name }}</h1>
+                  <p>Status: {{ character[0].status }}</p>
+                  <p>Gender: {{ character[0].gender }}</p>
+                  <p>Local: {{ character[0].location.name }}</p>
+                  <p>Species: {{ character[0].species }}</p>
+                </section>
+            
+                <section class="character__status fadeIn center d-flex flex-column">
+                  <img
+                    [src]="character[0].image"
+                    [alt]="character[0].name"
+                    class="slideInDown"
+                  />
+              </section>
+              <div class="d-flex justify-content-center align-items-end pt-4">
+                <button (click)="voltar()" type="button" class="btn bg-white btn-color">
+                    Voltar
+                </button>
+            </div>
+            </div>
+        </div>
+    </ng-template>
+</main>

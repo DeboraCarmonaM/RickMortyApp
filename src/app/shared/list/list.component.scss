@@ -1,0 +1,65 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host{
+    .listagem {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        padding: rem-calc(20);
+
+        .rickMorty {
+            position: relative;
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.2);
+
+            width: rem-calc(200);
+            height: rem-calc(250);
+
+            margin: rem-calc(15);
+            
+            border-radius: rem-calc(10);
+
+            text-decoration: none;
+            color: #68c49c;
+
+            &__species {
+                h2 {
+                    font-size: rem-calc(22);
+                    font-style: italic;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-top: rem-calc(10);
+                }
+                p, h2 {
+                    padding-left: rem-calc(5);
+                }
+            }
+
+            &__image {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                right: rem-calc(45);
+                bottom: rem-calc(20);
+
+                img {
+                    width: rem-calc(115);
+                    border-radius: 50%;
+                }
+            }
+            &__image :hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .btn-color :hover {
+        color: #68c49c;
+        transform: scale(1.1);
+    }
+
+}
+

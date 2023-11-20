@@ -1,0 +1,23 @@
+<app-search (emmitSearch)="getSearch($event)"></app-search>
+
+<section class="listagem">
+    <ng-template ngFor let-rickMorty [ngForOf]="getAllCharacters">
+            <a class="rickMorty" (click)="navigateToDetails(rickMorty.id)">
+               <section class="rickMorty__species ">
+                    <h2>
+                         {{ rickMorty.name }}
+                    </h2>
+                    <p> Species: {{ rickMorty.species }} </p>
+               </section>
+               <section class="rickMorty__image">
+                    <img [src]="rickMorty.image" alt="Rick e Morty personagem">
+                </section>
+            </a>  
+    </ng-template>
+</section>
+
+<div class="d-flex justify-content-center pb-3 btn-color">
+    <button type="button" class="btn bg-white mx-auto" (click)="atualizaPersonagens()">
+        Atualizar personagens
+    </button>
+</div>

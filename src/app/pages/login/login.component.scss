@@ -1,0 +1,21 @@
+@import '../../../config-scss/rem-calc.scss';
+
+.login-container {
+    max-width: rem-calc(300);
+    margin: auto;
+    padding: rem-calc(20);
+    margin-top: rem-calc(50);
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    background-image: url("../../../assets/bgLogin.png");
+    background-size: cover;
+    background-position: center;
+
+    color: #68c49c;
+}
+  
+button {
+    margin-top: rem-calc(10);
+}

@@ -1,0 +1,58 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host {
+  body {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  main {
+    margin-top: rem-calc(40);
+    color: #fff;
+
+    .character__names {
+      display: grid;
+      place-items: center;
+
+      height: rem-calc(75);
+
+      padding: 0 rem-calc(30);
+
+      h1 {
+        color: #68c49c;
+        font-size: rem-calc(32);
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+    }
+
+    .character__status {
+      img {
+        max-width: rem-calc(250);
+        border-radius: 5%;
+
+        padding-top: rem-calc(150);
+
+        //Remove Bug Animation
+        -webkit-animation-fill-mode: none !important;
+        animation-fill-mode: none !important;
+      }
+    }
+    
+    .card-details {
+      background-color: rgba(255, 255, 255, 0.2);
+      width: rem-calc(700);
+      height: rem-calc(550);
+      border-radius: 8px;
+      box-shadow: 5px 10px 18px #68c49c;
+    }
+
+    .center {
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+.btn-color :hover{
+  color: #68c49c !important;
+  transform: scale(1.1) !important;
+}

@@ -1,0 +1,14 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host{
+    
+    img {
+        width: rem-calc(700);
+    }
+
+    .btn-transparent {
+        background-color: transparent;
+        color: #68c49c; 
+        border: 1px solid #68c49c; 
+      }
+}
